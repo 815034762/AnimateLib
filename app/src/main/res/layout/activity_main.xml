@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:zty="http://schemas.android.com/apk/res/cn.com.zhangtianyang.animationdemo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:ignore="ResAuto">
+
+        <cn.com.animationlibrary.LeftToRightInfinite
+            android:id="@+id/leftToRightInfinite"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            zty:firstCircleColor="@color/colorPrimary"
+            zty:secondCircleColor="@color/colorAccent" />
+
+        <cn.com.animationlibrary.RadianView
+            android:id="@+id/radianView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent" />
+
+        <cn.com.animationlibrary.MoveLineView
+            android:id="@+id/moveLineView"
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            zty:lineColor="@color/colorAccent"
+            zty:lineWidth="8dp" />
+
+        <cn.com.animationlibrary.FiveLine
+            android:id="@+id/fiveLine1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent" />
+
+        <cn.com.animationlibrary.CylinderView
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"/>
+
+        <cn.com.animationlibrary.AutoFitTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:includeFontPadding="false"
+            android:text="这是一个测试"
+            android:textColor="@android:color/black" />
+
+        <cn.com.animationlibrary.AutoFitTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="0dp"
+            android:text="这是一个超出内容测试这是一个超出内容测试这是一个超出内容测试已结束"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</ScrollView>
