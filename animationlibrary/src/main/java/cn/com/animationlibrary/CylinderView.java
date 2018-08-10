@@ -3,8 +3,10 @@ package cn.com.animationlibrary;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.graphics.Shader;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -39,7 +41,7 @@ public class CylinderView extends View {
         drawRectangle(canvas);
     }
 
-    private void initPaint(){
+    private void initPaint() {
 
         mPaint = new Paint();
         mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
@@ -48,21 +50,26 @@ public class CylinderView extends View {
 
     /**
      * 画半圆
+     *
      * @param canvas
      */
-    private void drawSemicircle(Canvas canvas){
+    private void drawSemicircle(Canvas canvas) {
 
         RectF rectF = new RectF(0, 0, getWidth(), getWidth());
-        canvas.drawArc(rectF,0,-180,true,mPaint);
+        canvas.drawArc(rectF, 0, -180, true, mPaint);
     }
 
     /**
      * 画方形
+     *
      * @param canvas
      */
-    private void drawRectangle(Canvas canvas){
-        RectF rectF = new RectF(0, getWidth()/2, getWidth(), getHeight());
-       canvas.drawRect(rectF,mPaint);
+    private void drawRectangle(Canvas canvas) {
+
+        RectF rectF = new RectF(0, getWidth() / 2, getWidth(), getHeight());
+        LinearGradient gradient = new LinearGradient(0, (getHeight()-getWidth()/2), 0, 0, new int[]{Color.BLUE, Color.YELLOW}, null, Shader.TileMode.CLAMP);
+        mPaint.setShader(gradient);
+        canvas.drawRect(rectF, mPaint);
     }
 
 }
