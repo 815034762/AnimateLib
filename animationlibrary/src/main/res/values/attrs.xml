@@ -10,4 +10,7 @@
     <attr name="type" format="integer"></attr>
     <attr name="duration" format="integer"></attr>
 </declare-styleable>
+<declare-styleable name="AnimateTextView">
+    <attr name="animaDuration" format="integer"></attr>
+</declare-styleable>
 </resources>

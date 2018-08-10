@@ -48,5 +48,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        animateTextView.start();
     }
 }

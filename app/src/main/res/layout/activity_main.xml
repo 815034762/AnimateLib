@@ -68,19 +68,19 @@
             android:text="这是一个超出内容测试这是一个超出内容测试这是一个超出内容测试已结束"
             android:textColor="@android:color/black" />
 
-        <!--<cn.com.animationlibrary.FlashTextView-->
-        <!--android:id="@+id/flashView"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:gravity="center"-->
-        <!--android:text="这是一个FlashTextView"-->
-        <!--/>-->
+        <cn.com.animationlibrary.FlashTextView
+            android:id="@+id/flashView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="这是一个FlashTextView" />
 
         <cn.com.animationlibrary.AnimateTextView
             android:id="@+id/animateTextView"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center"
+            zty:animaDuration="3500"
             android:text="这是一个可以播放动画的TextView" />
     </LinearLayout>
 </ScrollView>
