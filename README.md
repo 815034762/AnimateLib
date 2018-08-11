@@ -1,2 +1,2 @@
 # AnimateLib
-一个练习动画的自定义View
+一个练习动画的自定义View，里面有一些可以根据TextView宽度自动调节文字大小的View，类似广告闪烁的View
