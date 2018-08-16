@@ -67,7 +67,7 @@ public class CylinderView extends View {
     private void drawRectangle(Canvas canvas) {
 
         RectF rectF = new RectF(0, getWidth() / 2, getWidth(), getHeight());
-        LinearGradient gradient = new LinearGradient(0, (getHeight()-getWidth()/2), 0, 0, new int[]{Color.BLUE, Color.YELLOW}, null, Shader.TileMode.CLAMP);
+        LinearGradient gradient = new LinearGradient(0, (getHeight()-getWidth()/2), 0, 0, new int[]{Color.BLUE, Color.YELLOW}, new float[]{0.5f,1.0f}, Shader.TileMode.CLAMP);
         mPaint.setShader(gradient);
         canvas.drawRect(rectF, mPaint);
     }

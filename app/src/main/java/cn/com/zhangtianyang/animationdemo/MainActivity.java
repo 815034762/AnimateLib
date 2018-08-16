@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils;
 
 import cn.com.animationlibrary.AnimateTextView;
 import cn.com.animationlibrary.LeftToRightInfinite;
+import cn.com.zhangtianyang.animationdemo.utils.NotificationUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         test = findViewById(R.id.leftToRightInfinite);
         animateTextView = findViewById(R.id.animateTextView);
-
         animateTextView.setAnimations(R.anim.right_to_left);
 
         test.setOnClickListener(new View.OnClickListener() {
@@ -49,5 +49,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
         animateTextView.start();
+
+        findViewById(R.id.tv_create_notifycation).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                NotificationUtils notificationUtils = new NotificationUtils(MainActivity.this);
+                notificationUtils.sendNotification("测试标题", "测试内容");
+            }
+        });
+
+        findViewById(R.id.btn_go_path_activity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                PathActivity.start(MainActivity.this);
+            }
+        });
+
     }
 }

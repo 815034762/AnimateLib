@@ -82,5 +82,40 @@
             android:gravity="center"
             zty:animaDuration="3500"
             android:text="这是一个可以播放动画的TextView" />
+
+        <TextView
+            android:id="@+id/tv_create_notifycation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Android 8.0创建一个通知"
+            />
+
+        <cn.com.animationlibrary.HeartView
+            android:layout_width="250dp"
+            android:layout_height="250dp"/>
+
+
+        <cn.com.animationlibrary.CirclePathView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            />
+
+        <cn.com.animationlibrary.PathTextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            />
+
+        <Button
+            android:id="@+id/btn_go_path_activity"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="去自定义页面"
+            />
     </LinearLayout>
 </ScrollView>
