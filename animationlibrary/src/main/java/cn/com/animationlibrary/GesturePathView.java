@@ -39,16 +39,16 @@ public class GesturePathView extends View {
     //临时点坐标
     private float mX, mY;
 
-    private static final float TOUCH_TOLERANCE = 4;
+    private final float TOUCH_TOLERANCE = 4;
 
     /**
      * 保存Path路径的集合,用List集合来模拟栈
      */
-    private static List<DrawPath> savePath;
+    private  List<DrawPath> savePath;
     /**
      * 保存Path路径的集合,用List集合来模拟栈
      */
-    private static List<DrawPath> originSavePath;
+    private  List<DrawPath> originSavePath;
     /**
      * 记录Path路径的对象
      */
